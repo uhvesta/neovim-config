@@ -1,6 +1,8 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
+
+-- Cannot live without any of these
 vim.keymap.set("n", "<Tab>", ">>", { noremap = true, silent = true })
 
 -- Unindent line with Shift+Tab

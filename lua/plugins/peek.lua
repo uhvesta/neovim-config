@@ -1,4 +1,3 @@
--- ~/.config/nvim/lua/plugins/lspsaga.lua
 return {
   {
     "nvimdev/lspsaga.nvim",

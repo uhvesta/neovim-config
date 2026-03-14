@@ -19,3 +19,7 @@ vim.keymap.set("v", "<S-Tab>", "<gv", { noremap = true, silent = true })
 -- Move selected lines up and down
 vim.keymap.set("x", "<S-j>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 vim.keymap.set("x", "<S-k>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true })
+
+vim.keymap.set("n", "<leader>td", function()
+  vim.diagnostic.enable(not vim.diagnostic.is_enabled())
+end, { desc = "Toggle diagnostics" })

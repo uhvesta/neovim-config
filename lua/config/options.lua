@@ -14,3 +14,8 @@ vim.opt.linebreak = true -- Break lines at word boundaries
 vim.opt.breakindent = true -- Indent wrapped lines
 
 vim.g.snacks_animate = false
+
+vim.diagnostic.config({
+  virtual_text = false,
+  virtual_lines = true,
+})

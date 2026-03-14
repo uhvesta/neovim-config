@@ -19,3 +19,14 @@ vim.diagnostic.config({
   virtual_text = false,
   virtual_lines = true,
 })
+
+vim.opt.signcolumn = "no"
+
+vim.api.nvim_create_autocmd("OptionSet", {
+  pattern = "signcolumn",
+  callback = function()
+    if vim.o.signcolumn ~= "no" then
+      vim.opt.signcolumn = "no"
+    end
+  end,
+})
